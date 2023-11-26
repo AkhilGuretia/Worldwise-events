@@ -19,7 +19,7 @@ const Homepage = () => {
           world.
         </h2>
         <Link to="/login" className="cta">
-          Start collaborating now
+          Start Creating Now
         </Link>
       </section>
     </main>

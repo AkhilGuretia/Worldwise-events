@@ -13,7 +13,7 @@ const App = () => {
         <Route path="create-event-form" element={<CreateEventForm />} />
         <Route path="events-listing" element={<EventListings />} />
         <Route path="login" element={<Login />} />
-        <Route path="*" element={PageNotFound} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );

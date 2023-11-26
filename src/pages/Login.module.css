@@ -24,3 +24,12 @@
     flex-direction: column;
     gap: 0.5rem;
 }
+
+.login button {
+    background-color: #ffb545;
+    color: #242a2e;
+    padding: 0.8rem 2rem;
+    border-radius: 7px;
+    border-style: none;
+    cursor: pointer;
+}

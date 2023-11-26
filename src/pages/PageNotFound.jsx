@@ -1,7 +1,7 @@
 const PageNotFound = () => {
   return (
     <div>
-      <h2>Page Not Found 💔</h2>
+      <h1 style={{ textAlign: "center", color: "black" }}>Page Not Found 😓</h1>
     </div>
   );
 };
