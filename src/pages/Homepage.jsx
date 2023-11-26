@@ -1,5 +1,12 @@
+import PageNav from "../components/PageNav";
+
 const Homepage = () => {
-  return <div>Homepage</div>;
+  return (
+    <div>
+      <PageNav />
+      <h2>Homepage</h2>
+    </div>
+  );
 };
 
 export default Homepage;

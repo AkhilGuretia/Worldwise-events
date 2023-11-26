@@ -1,12 +1,12 @@
 import PageNav from "../components/PageNav";
 
-const EventListings = () => {
+const Login = () => {
   return (
     <div>
       <PageNav />
-      <h2>EventListings</h2>
+      <h2>Login</h2>
     </div>
   );
 };
 
-export default EventListings;
+export default Login;
