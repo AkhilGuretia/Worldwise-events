@@ -1,0 +1,20 @@
+[
+  {
+    "calendarType": "",
+    "name": "",
+    "startDate": "",
+    "endDate": "",
+    "location": "",
+    "options": {
+      "ticketsType": "",
+      "requiresApproval": "",
+      "capacity": "",
+      "visibility": ""
+    },
+    "theme": {
+      "color": "",
+      "typeface": ""
+    },
+    "bannerImage": ""
+  }
+]
