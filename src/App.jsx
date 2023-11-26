@@ -7,17 +7,15 @@ import Login from "./pages/Login";
 
 const App = () => {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="create-event-form" element={<CreateEventForm />} />
-          <Route path="events-listing" element={<EventListings />} />
-          <Route path="login" element={<Login />} />
-          <Route path="*" element={PageNotFound} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="create-event-form" element={<CreateEventForm />} />
+        <Route path="events-listing" element={<EventListings />} />
+        <Route path="login" element={<Login />} />
+        <Route path="*" element={PageNotFound} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
