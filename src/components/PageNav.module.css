@@ -57,12 +57,12 @@ a.ctaLink:visited {
 
 /* CSS Modules feature */
 .nav a:global(.active) {
-    color: #00c46a;
+    color: #ffb545;
 }
 
 a.ctaLink:link,
 a.ctaLink:visited {
-    background-color: #00c46a;
+    background-color: #ffb545;
     color: #242a2e;
     padding: 0.8rem 2rem;
     border-radius: 7px;
