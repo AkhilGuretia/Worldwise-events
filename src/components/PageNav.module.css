@@ -57,7 +57,7 @@ a.ctaLink:visited {
 
 /* CSS Modules feature */
 .nav a:global(.active) {
-    color: #ffb545;
+    color: #00c46a;
 }
 
 a.ctaLink:link,
