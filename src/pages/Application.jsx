@@ -9,7 +9,7 @@ const Application = () => {
         <h1>
           Welcome back!
           <br />
-          use the above navigation to create or view your events.
+          use the above navigation to create and view your events.
         </h1>
       </section>
     </main>

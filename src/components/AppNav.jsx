@@ -3,9 +3,10 @@ import styles from "./PageNav.module.css";
 import Logo from "./Logo";
 
 const AppNav = () => {
+  const LogoSrc = "/app";
   return (
     <nav className={styles.nav}>
-      <Logo />
+      <Logo LogoSrc={LogoSrc} />
       <ul>
         <li>
           <NavLink to="#">New Event</NavLink>
