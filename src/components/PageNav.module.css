@@ -46,14 +46,6 @@ a.ctaLink:visited {
     gap: 4rem;
 }
 
-.nav a:link,
-.nav a:visited {
-    text-decoration: none;
-    color: #ececec;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
 
 /* CSS Modules feature */
 .nav a:global(.active) {

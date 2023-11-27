@@ -4,6 +4,7 @@ import EventListings from "./pages/EventListings";
 import CreateEventForm from "./pages/CreateEventForm";
 import PageNotFound from "./pages/PageNotFound";
 import Login from "./pages/Login";
+import Application from "./pages/Application";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="create-event-form" element={<CreateEventForm />} />
         <Route path="events-listing" element={<EventListings />} />
         <Route path="login" element={<Login />} />
+        <Route path="app" element={<Application />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
