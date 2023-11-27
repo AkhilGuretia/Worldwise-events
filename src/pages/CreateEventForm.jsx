@@ -1,5 +1,5 @@
 import PageNav from "../components/PageNav";
-import styles from "./AboutEventListings.module.css";
+import styles from "./AboutEvents.module.css";
 import { Link } from "react-router-dom";
 
 const CreateEventForm = () => {

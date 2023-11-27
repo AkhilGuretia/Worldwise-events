@@ -1,5 +1,5 @@
 import PageNav from "../components/PageNav";
-import styles from "./AboutEventListings.module.css";
+import styles from "./AboutEvents.module.css";
 import { Link } from "react-router-dom";
 
 const EventListings = () => {
@@ -20,7 +20,7 @@ const EventListings = () => {
         <Link
           to="/login"
           className="cta"
-          style={{ position: "relative", top: "-200px" }}
+          style={{ position: "relative", top: "-200px", textAlign: "center" }}
         >
           Login now
         </Link>
