@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Homepage from "./pages/Homepage";
-import EventListings from "./pages/EventListings";
-import CreateEventForm from "./pages/CreateEventForm";
+import AboutEventListings from "./pages/AboutEventListings";
+import AboutCreateEventForm from "./pages/AboutCreateEventForm";
 import PageNotFound from "./pages/PageNotFound";
 import Login from "./pages/Login";
 import Application from "./pages/Application";
@@ -11,8 +11,8 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="create-event-form" element={<CreateEventForm />} />
-        <Route path="events-listing" element={<EventListings />} />
+        <Route path="create-event-form" element={<AboutCreateEventForm />} />
+        <Route path="events-listing" element={<AboutEventListings />} />
         <Route path="login" element={<Login />} />
         <Route path="app" element={<Application />} />
         <Route path="*" element={<PageNotFound />} />

@@ -2,7 +2,7 @@ import PageNav from "../components/PageNav";
 import styles from "./AboutEvents.module.css";
 import { Link } from "react-router-dom";
 
-const EventListings = () => {
+const AboutEventListings = () => {
   return (
     <main className={styles.about}>
       <PageNav />
@@ -29,4 +29,4 @@ const EventListings = () => {
   );
 };
 
-export default EventListings;
+export default AboutEventListings;

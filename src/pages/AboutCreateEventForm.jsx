@@ -2,7 +2,7 @@ import PageNav from "../components/PageNav";
 import styles from "./AboutEvents.module.css";
 import { Link } from "react-router-dom";
 
-const CreateEventForm = () => {
+const AboutCreateEventForm = () => {
   return (
     <main className={styles.about}>
       <PageNav />
@@ -30,4 +30,4 @@ const CreateEventForm = () => {
   );
 };
 
-export default CreateEventForm;
+export default AboutCreateEventForm;
