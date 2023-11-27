@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styles from "./PageNav.module.css";
+import styles from "./Nav.module.css";
 import Logo from "./Logo";
 
 const AppNav = () => {
@@ -9,10 +9,10 @@ const AppNav = () => {
       <Logo LogoSrc={LogoSrc} />
       <ul>
         <li>
-          <NavLink to="#">New Event</NavLink>
+          <NavLink to="/create-event-form">New Event</NavLink>
         </li>
         <li>
-          <NavLink to="#">View Events</NavLink>
+          <NavLink to="/view-events-list">View Events</NavLink>
         </li>
         <li>
           <NavLink to="/" className={styles.ctaLink}>
