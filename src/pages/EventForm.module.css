@@ -1,0 +1,59 @@
+.about {
+    margin: 2.5rem;
+    padding: 2.5rem 5rem;
+    background-color: var(--color-dark--1);
+    min-height: calc(100vh - 5rem);
+}
+
+.form {
+    background-color: #42484d;
+    border-radius: 7px;
+    padding: 2rem 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    /* Different from other form */
+    width: 48rem;
+    margin: 8rem
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.login button {
+    background-color: #ffb545;
+    color: #242a2e;
+    padding: 0.8rem 2rem;
+    border-radius: 7px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+
+.special {
+
+    padding: 1.8rem 3.2rem;
+    font-family: inherit;
+    font-size: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #d6dee0;
+    transition: all 0.2s;
+}
+
+/* 
+.card input:focus {
+    outline: none;
+    background-color: #fff;
+} */

@@ -1,20 +1,18 @@
-[
-  {
-    "calendarType": "",
-    "name": "",
-    "startDate": "",
-    "endDate": "",
-    "location": "",
-    "options": {
-      "ticketsType": "",
-      "requiresApproval": "",
-      "capacity": "",
-      "visibility": ""
-    },
-    "theme": {
-      "color": "",
-      "typeface": ""
-    },
-    "bannerImage": ""
-  }
-]
+{
+  "events": [
+    {
+      "id": 1,
+      "eventName": "Sample Event",
+      "startDate": "2023-01-01",
+      "startTime": "12:00",
+      "endDate": "2023-01-02",
+      "endTime": "18:00",
+      "location": "Sample Location",
+      "ticketsType": "free",
+      "requireApproval": "no",
+      "capacity": "unlimited",
+      "visibility": "public",
+      "eventImage": "https://example.com/sample-image.jpg"
+    }
+  ]
+}
