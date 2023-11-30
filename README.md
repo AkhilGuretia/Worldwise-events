@@ -11,5 +11,5 @@ How to Determine the Accomplished Project Goals:
 
 1. When you first load the application you're currently at the Homepage of the application and not logged in.
 2. The application will conditionally render all the components and check if the user is logged in.
-3. once the user logs in through the dummy login page the application will enter to different components for all the pages.
-4. Head to the new events page that will load up the form for the event and as sson as all the details are submitted you will be navigated automatically to the Listings page.
+3. once the user logs in through the dummy login page the application will render different content in components for all the pages.
+4. Head to the new events page that will load up the form for the event and as soon as all the details are submitted you will be navigated automatically to the Listings page.
