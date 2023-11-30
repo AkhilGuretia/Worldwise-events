@@ -15,8 +15,9 @@
     gap: 2rem;
 
     /* Different from other form */
-    width: 48rem;
-    margin: 8rem
+    width: 100rem;
+    margin: auto;
+    align-content: center;
 }
 
 .row {

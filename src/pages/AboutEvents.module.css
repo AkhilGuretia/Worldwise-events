@@ -32,3 +32,52 @@
 .about section a {
   margin-top: 2rem;
 }
+
+.eventCard {
+  border: 1px solid #fff;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2.5rem;
+  padding: 2.5rem 5rem;
+  background-color: var(--color-dark--1);
+  min-height: calc(100vh - 5rem);
+}
+
+.eventCard section {
+  background-color: #42484d;
+  border-radius: 7px;
+  padding: 2rem 3rem;
+  width: 60rem;
+  margin: auto;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #fff;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-dark--1);
+
+}
+
+.eventCard h2 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+.eventCard p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.eventCard section a {
+  margin-top: 2rem;
+}

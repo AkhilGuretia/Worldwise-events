@@ -199,6 +199,7 @@ const NewEventForm = () => {
         <div className={styles.row}>
           <label htmlFor="eventImage">Event Image</label>
           <input
+            style={{ color: "black" }}
             type="file"
             id="eventImage"
             name="eventImage"
