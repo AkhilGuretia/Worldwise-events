@@ -1,16 +1,39 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AppNav from "../components/AppNav";
 import styles from "./AboutEvents.module.css";
 import { useLocation } from "react-router-dom";
 
 const EventsList = () => {
   const location = useLocation();
-  const formData = location.state?.formData || null;
+  const [formData, setFormData] = useState(location.state?.formData || null);
 
   useEffect(() => {
-    console.log("Location state:", location.state);
-    console.log("Form data:", formData);
-  }, [location.state, formData]);
+    // Check if formData is not present in state but is in local storage
+    if (!formData) {
+      const storedData = localStorage.getItem("formData");
+      if (storedData) {
+        setFormData(JSON.parse(storedData));
+      }
+    } else {
+      // Convert image to data URL and store it in formData
+      if (formData.eventImage instanceof File) {
+        const reader = new FileReader();
+
+        reader.onload = (e) => {
+          const dataURL = e.target.result;
+          setFormData((prevData) => ({
+            ...prevData,
+            eventImageLocalStorage: dataURL,
+          }));
+        };
+
+        reader.readAsDataURL(formData.eventImage);
+      }
+
+      // Store formData in local storage
+      localStorage.setItem("formData", JSON.stringify(formData));
+    }
+  }, [formData]);
 
   return (
     <main className={styles.eventCard}>
@@ -26,14 +49,15 @@ const EventsList = () => {
               </div>
 
               {/* Include other form data fields */}
-              {formData.eventImage && (
+              {formData.eventImageLocalStorage && (
                 <img
-                  src={URL.createObjectURL(formData.eventImage)}
+                  src={formData.eventImageLocalStorage}
                   alt="Event"
                   style={{
                     maxWidth: "45%",
                     objectFit: "cover",
                     borderRadius: "10px",
+                    maxHeight: "15rem",
                   }}
                 />
               )}
