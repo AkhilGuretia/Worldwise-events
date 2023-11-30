@@ -44,8 +44,13 @@ const EventsList = () => {
           {formData && (
             <div className={styles.card}>
               <div>
-                <h1>{formData.startTime}</h1>
+                <h1>
+                  {formData.startTime} on {formData.startDate}
+                </h1>
                 <h1>{formData.eventName}</h1>
+
+                <p>{formData.location}</p>
+                <p>{formData.visibility}</p>
               </div>
 
               {/* Include other form data fields */}

@@ -70,6 +70,12 @@ const NewEventForm = () => {
     <main className={styles.about}>
       <AppNav />
 
+      <h1
+        style={{ textAlign: "center", marginBottom: "5px", fontSize: "24px" }}
+      >
+        Create New Event
+      </h1>
+
       <form className={styles.form} onSubmit={handleFormSubmit}>
         <div className={styles.row}>
           <label htmlFor="eventName">Event Name</label>
