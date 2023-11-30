@@ -25,13 +25,14 @@
     gap: 0.5rem;
 }
 
-.login button {
+button {
     background-color: #ffb545;
     color: #242a2e;
-    padding: 0.8rem 2rem;
+    padding: 1.8rem 2rem;
     border-radius: 7px;
     border-style: none;
     cursor: pointer;
+    font-size: x-large;
 }
 
 .gridContainer {

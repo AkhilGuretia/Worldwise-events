@@ -1,6 +1,7 @@
 import { useReducer } from "react";
 import AppNav from "../components/AppNav";
 import styles from "./EventForm.module.css";
+import { useNavigate } from "react-router-dom";
 
 const initialState = {
   eventName: "",
@@ -13,6 +14,7 @@ const initialState = {
   requireApproval: "no",
   capacity: "unlimited",
   visibility: "public",
+  eventImage: null,
 };
 
 const reducer = (state, action) => {
@@ -37,27 +39,35 @@ const reducer = (state, action) => {
       return { ...state, capacity: action.payload };
     case "UPDATE_VISIBILITY":
       return { ...state, visibility: action.payload };
+    case "UPDATE_EVENTIMAGE":
+      return { ...state, eventImage: action.payload };
     default:
       return state;
   }
 };
+
 const NewEventForm = () => {
+  const navigate = useNavigate();
   const [formData, dispatch] = useReducer(reducer, initialState);
 
   const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    dispatch({ type: `UPDATE_${name.toUpperCase()}`, payload: value });
+    const { name, value, type, files } = event.target;
+
+    const payload = type === "file" ? files[0] : value;
+
+    dispatch({ type: `UPDATE_${name.toUpperCase()}`, payload });
   };
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
     console.log("Form submitted with data:", formData);
+    // we can now use formData to pass data to another page.
+
+    navigate("/view-events-list", { state: { formData } });
   };
 
   return (
     <main className={styles.about}>
-      <h3>Create a New Event</h3>
-
       <AppNav />
 
       <form className={styles.form} onSubmit={handleFormSubmit}>
@@ -198,8 +208,10 @@ const NewEventForm = () => {
           ></input>
         </div>
 
-        <div className={styles.submitButton}>
-          <button type="submit">Create Event</button>
+        <div className={styles.row}>
+          <button className="ctaLink" type="submit">
+            Create Event
+          </button>
         </div>
       </form>
     </main>
